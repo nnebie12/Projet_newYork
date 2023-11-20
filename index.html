@@ -19,7 +19,7 @@
     <meta name="twitter:title" content="Portfolio">
     <meta name="twitter:description" content="Page for Halloween in the world">
     <meta name="twitter:image" content="https://giusmili.github.io/cube-halloween/asset/vendredi_13.jpg">
-...
+
     
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
@@ -28,40 +28,49 @@
     <link rel="stylesheet" href="css/main.css">
     <title>Projet init bachelors</title>
 </head>
-<body>
+<body itemscope itemtype="https://schema.org/WebPage">
     
     <header>
-        <h1>
-            <span aria-hidden="true">🧑‍💻 </span>
-            Projet New York
+        <h1 itemprop="name">
+            <span aria-hidden="true"><ion-icon name="logo-octocat"></ion-icon> </span>
+            Ville de New York
         </h1>
     </header>
     <main> 
        
         <section>
-            <h2>
-                <span aria-hidden="true">🚀</span> A propos
+            <h2 itemprop="name">
+                <span aria-hidden="true"><ion-icon name="bulb-outline"></ion-icon></span> A propos
             </h2>
-            <img
+            <img itemprop="image"
                 src="./assets/new york.jpg" 
                 alt="paysage"
                 loading="lazy"
                 >
-            <p>
-                New York est une ville composée de 5 arrondissements à l'embouchure du fleuve Hudson 
+            <p itemprop="description"><ion-icon name="easel-outline"></ion-icon>
+                <b>Description</b> : New York est une ville composée de 5 arrondissements à l'embouchure du fleuve Hudson 
                 et de l'océan Atlantique. En son centre se trouve Manhattan, 
                 un arrondissement densément peuplé faisant partie des principaux centres commerciaux, 
                 financiers et culturels du monde. Ses sites incontournables comprennent des gratte-ciel 
                 comme l'Empire State Building et l'immense Central Park. Le théâtre de Broadway est situé 
                 sur Times Square
             </p>
+            <p itemprop="description"><ion-icon name="cloudy-night-outline"></ion-icon><b>Météo</b> :6°C, vent O à 6 km/h, 68 % d'humidité weather.com</p>
+            <p itemprop="description"><ion-icon name="business-outline"></ion-icon>
+               <b> Quartier</b> : Harlem, Upper East Side, West Village, Flushing, SoHo, PLUS
+            </p>
+            <p itemprop="description"><ion-icon name="people-circle-outline"></ion-icon>
+                <b>Population</b> : 8,468 millions (2021)
+            </p>
+            <p itemprop="description"><ion-icon name="location-outline"></ion-icon>
+                <b>Coordonnées</b> : 40° 42′ 51″ nord, 74° 00′ 21″ ouest
+            </p>
         </section>
     </main>
     <footer>
-        <p>
-            &copy; - MIT - 2023 <span aria-hidden="true">⚡️</span>
-        </p>
+        
     </footer>
-    <script src="./js/app.js"></script>
+    <script type="module" src="./js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 </body>
 </html>
