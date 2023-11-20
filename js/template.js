@@ -15,3 +15,32 @@ export const City = ({
 for(let index in City){
 console.log(index+" "+City[index]+'\n')
 }
+
+export const Template = {
+    el: document.querySelector("section"),
+    printF(){
+        `<ul>
+            <li>
+            <img 
+                src="${City.image}" 
+                alt="cover"
+                itemprop="image"
+                >
+            </li>
+            <li><ion-icon name="easel-outline"></ion-icon>
+            <b>Description</b> : ${City.Description}</li>
+            <li>
+            <ion-icon name="cloudy-night-outline"></ion-icon><b>Météo : </b>${City.Météo}
+            </li>
+            <li>
+            <ion-icon name="business-outline"></ion-icon>
+            <b> Quartier</b> : ${City.Quartiers}
+            </li>
+            <li><ion-icon name="people-circle-outline"></ion-icon>
+            <b>Population</b> : ${City.Population}</li>
+            <li><ion-icon name="location-outline"></ion-icon>
+            <b>Coordonnées</b> : ${City.Coordonnées}
+
+        </ul>`;
+    }
+}
